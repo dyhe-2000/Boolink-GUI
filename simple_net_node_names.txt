@@ -1,5 +1,0 @@
-IN 1 blue
-X
-Y
-Z
-OUT 0 orange
