@@ -1,5 +1,0 @@
-IN = IN
-X = Y & ~IN
-Y = X
-Z = ~X
-OUT = ~Y & Z
