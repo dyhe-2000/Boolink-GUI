@@ -649,8 +649,7 @@ class GraphPage(tk.Frame):
                             command = lambda: controller.show_frame(HomePage))
         button1.pack()
         
-        button2 = ttk.Button(self, text="Refresh",
-                            command = lambda: self.reload())
+        button2 = ttk.Button(self, text="Refresh", command = lambda: self.reload())
         button2.pack()
         
         
