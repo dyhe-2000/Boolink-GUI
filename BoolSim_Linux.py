@@ -964,14 +964,14 @@ class RelationalModelGraphPage(tk.Frame):
                     tempStr.append(tempEqns[a][charIndex])
             #print("".join(tempStr))
             self.notEqns.append("".join(tempStr))
-            
+        
         for a in range(len(self.notEqns)):
             #print(self.eqns[a])
             numberList = [int(s) for s in self.notEqns[a].split() if s.isdigit()]
             self.notEqns[a] = numberList
         
-            while(len(self.notEqns) != len(self.eqns)):
-                self.notEqns.pop()
+        while(len(self.notEqns) != len(self.eqns)):
+            self.notEqns.pop()
         
         #not eqns is goood
         # print("notEqns array")
