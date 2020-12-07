@@ -17,14 +17,14 @@ pip install pandas
 pip install jupyter-notebook
 After the above packages are installed, you may check their version by trying the commands given the second screenshot below.
 Good to go!
-![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction pictures/readyToGo1.JPG?raw=true)
-![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction pictures/readyToGo2.JPG?raw=true)
+![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction_pictures/readyToGo1.JPG?raw=true)
+![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction_pictures/readyToGo2.JPG?raw=true)
 
 
 2. Downloading and Running BoolSim
 Create a new folder on your computer where you want to run BoolSim. For example, D:\BoolSim_simulation\
 Visit https://github.com/dyhe-2000/BoolSim-GUI.git for downloading the package. Click on the green button named Code and then click on Download ZIP in the dropdown. See the figure.
-![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction pictures/gotoGitHubAndDownload.JPG?raw=true) 
+![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction_pictures/gotoGitHubAndDownload.JPG?raw=true) 
 Save the zip file in the new folder you’ve just created. If the zip file is saved to the Downloads folder by default, cut and paste the zip file into the new folder.
 Then open the new folder you created in File Explorer. Right click on the zip file and extract it at the current location.
 To run BoolSim, we open the command prompt at the current location. To do that, follow one of these steps:
@@ -32,7 +32,7 @@ Press Shift and right click inside the folder. In the right-click (context) menu
 Select the address bar in the File Explorer by pressing Alt+D. Once the address is selected (D:\BoolSim_simulation\ for example), type ‘cmd’ and hit Enter.
 In the command prompt, type ‘python BoolSim_Windows.py’ and hit Enter. A new window should pop up.
 Click on ‘Agree’ to enter the start page of BoolSim. This is the home page of BoolSim. 
-![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction pictures/boolSimHomePage.JPG?raw=true) 
+![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction_pictures/boolSimHomePage.JPG?raw=true) 
 To simulate a boolean network on BoolSim, you need: a file containing the names and initial states of the nodes (called node-name-file); a file containing the update equations of the nodes (called equation-file). See Section 3 for steps to create these files, or how to use the files given for some pre-defined networks.
 Before proceeding, make sure you have created or located a node-name-file and an equations-file pertaining to the boolean network you wish to simulate.
 To define the nodes of the network, click Network ➝ Add Node (in the menu bar). Copy-paste the contents of the node-name-file into the text box in the pop-up menu titled ‘Adding Nodes’, and click on the ‘Add’ button. You may then close the pop-up menu.
@@ -45,7 +45,7 @@ Before simulating the network, set the number of initial conditions by clicking 
 Set the number of time steps by clicking on the ‘Set Simulation Time Step’ option on the menu bar. You may choose one of the options in the dropdown menu by clicking on them, or click on ‘Input arbitrary time steps’ to enter a (different) number into the dialog box. Click on the ‘Add’ button of the dialog box before closing it.
 Good to go! Click on the ‘Start Simulate Process’ button on the home page to run the simulation. This could take a few minutes. The button remains inactive while the simulation is running. Monitor the progress of the simulation on the command prompt window.
 To visualize the average activity of a particular node(s), click ‘Set nodes to see their graphical result’➝ ‘set node’ on the menu bar. In a separate text file (you may use ‘scratch paper.txt’ in the main folder for this), type each node that you want to visualize in a new line. For example, if you are simulating the simple network, you may type ‘IN’, ‘X’, ‘Z’ (without quotes) in separate lines in the text file. Copy-paste these lines to the text box of the pop-up menu. Click on the ‘Add’ button on the pop-up menu and close it. Click on the ‘See graphical analysis from simulation’ button on the homepage. You will now see a plot and a warning dialog box. Close the warning dialog box and hit Refresh when the plot appears. The following figure shows an example plot. Click on the ‘Back to Home’ button to get back to the home page of BoolSim.
-![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction pictures/graphPage.JPG?raw=true) 
+![alt text](https://github.com/dyhe-2000/BoolSim-GUI/instruction_pictures/graphPage.JPG?raw=true) 
 3. Preparing the Network
 BoolSim package comes with text files containing node names and the update equations for a simple network and for stomatal closure networks mediated by ABA and ABA plus CO2. You may first simulate the ‘simple network’ to make sure everything is working fine before simulating the networks for stomatal closure driven by ABA, by ABA and CO2, or a new network designed by you. To simulate any boolean network on BoolSim, you need: a file containing the names and initial states of the nodes (called node-name-file); a file containing the update equations of the nodes (called equation-file). The node-name-file and equation-file for the predefined boolean networks are located in the sub-folders as listed below:
 
