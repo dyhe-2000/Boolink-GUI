@@ -8,8 +8,8 @@ Users need GNU's C++ compiler (g++) and Python3 to run BoolSim. Detailed instruc
 First, download the instruction manual word document appropriate for your operating system (e.g. BoolSim_inst_manual_windows.docx for Windows) by clicking on the docx file and then clicking Download. Next, follow the steps described in the document. Some common errors and their fixes are included in the document as well. 
 
 The documents for different operating systems are:
-BoolSim_inst_manual_windows.docx for Windows
-BoolSim_inst_manual_macOS.docx for Mac OS
-BoolSim_inst_manual_Linux.docx for Linux
+- BoolSim_inst_manual_windows.docx for Windows
+- BoolSim_inst_manual_macOS.docx for Mac OS
+- BoolSim_inst_manual_Linux.docx for Linux
 
 If you still have questions, email the authors Wouter-Jan Rappel (rappel@physics.ucsd.edu) David He (dyhe@ucsd.edu) or Aravind Karanam (akaranam@ucsd.edu).
