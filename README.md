@@ -1,9 +1,13 @@
+# Start Here
+
 BoolSim is the open-source software package accompanying the manuscript "BoolSim, a Graphical Interface for Open Access Boolean Network Simulations and Use in
 Guard Cell CO 2 Signaling". It is free to download, use, and distribute. It is written in C++ and Python3.
 
 BoolSim can simulate user-defined asynchronous Boolean networks. Everything but the simulation algorithm, which include the names of nodes, Boolean connections among nodes, number of time steps for simulation, number of initial conditions. The entire network, as well as the activity of any particular node may be visulaized.
 
 Users need GNU's C++ compiler (g++) and Python3 to run BoolSim. Detailed instructions to install them and BoolSim itself are provided in the instruction manual documents in this repository.
+
+The Instruction Manual included in the repository is identical to the Supplementary Text of the manuscript. You may choose to refer to either of them.
 
 First, download the instruction manual word document appropriate for your operating system (e.g. BoolSim_inst_manual_windows.docx for Windows) by clicking on the docx file and then clicking Download. Next, follow the steps described in the document. Some common errors and their fixes are included in the document as well. 
 
