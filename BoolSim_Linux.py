@@ -645,8 +645,7 @@ class GraphPage(tk.Frame):
         label = tk.Label(self, text="Graph Page!", font=LARGE_FONT)
         label.pack(padx=10, pady=10)
         
-        button1 = ttk.Button(self, text="Back to Home",
-                            command = lambda: controller.show_frame(HomePage))
+        button1 = ttk.Button(self, text="Back to Home", command = lambda: controller.show_frame(HomePage))
         button1.pack()
         
         button2 = ttk.Button(self, text="Refresh", command = lambda: self.reload())
@@ -848,8 +847,7 @@ class RelationalModelGraphPage(tk.Frame):
                             command = lambda: controller.show_frame(HomePage))
         button1.pack()   
 
-        button2 = ttk.Button(self, text="Refresh",
-                            command = lambda: self.reload())
+        button2 = ttk.Button(self, text="Refresh", command = lambda: self.reload())
         button2.pack()
         
         self.my_canvas = Canvas(self, width=w, height=h, bg="White")
