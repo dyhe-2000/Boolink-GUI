@@ -675,11 +675,7 @@ class GraphPage(tk.Frame):
         # file that contains all node names
         f_all_node_name = open('Node Name and their initial state.txt', 'r')
 
-        # load the result array
-        try:
-            bool_net = np.load('net_after_parsing.npy')
-        except:
-            return
+        
 
         # file that has names of nodes to plot
         f_plot_node_name = open('specific node.txt', 'r')
@@ -724,6 +720,12 @@ class GraphPage(tk.Frame):
                 sys.exit('{} not found in the set of nodes. (Check spelling and formatting.)'.format(n))
                 
         # passed the tests!
+        
+        # load the result array
+        try:
+            bool_net = np.load('net_after_parsing.npy')
+        except:
+            return
 
         # PLOT
         t_list = range(bool_net.shape[1])   # points on time-axis
@@ -758,12 +760,7 @@ class GraphPage(tk.Frame):
         # file that contains all node names
         f_all_node_name = open('Node Name and their initial state.txt', 'r')
 
-        # load the result array
-        #bool_net = np.load('net_after_parsing.npy')
-        try:
-            bool_net = np.load('net_after_parsing.npy')
-        except:
-            return
+        
 
         # file that has names of nodes to plot
         f_plot_node_name = open('specific node.txt', 'r')
@@ -801,6 +798,13 @@ class GraphPage(tk.Frame):
                 sys.exit('{} not found in the set of nodes. (Check spelling and formatting.)'.format(n))
                 
         # passed the tests!
+        
+        # load the result array
+        #bool_net = np.load('net_after_parsing.npy')
+        try:
+            bool_net = np.load('net_after_parsing.npy')
+        except:
+            return
 
         # PLOT
         t_list = range(bool_net.shape[1])   # points on time-axis
