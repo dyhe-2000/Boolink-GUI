@@ -792,16 +792,16 @@ public:
 			//std::cout << userInputString << std::endl;
 			userInputString = removeSpaces(userInputString); /*remove all spaces from the string*/
 			std::string userInputStringCopy = userInputString;
-			if (!contains_number(userInputString)) {
-				std::cout << "your input does not contain any number (no node index in your input), try again.\n";
-				goto tryAgain;
-			}
-			for (int i = 0; i < userInputString.length(); ++i) {
-				if (!isOneOfValidInputChar(userInputString[i])) {
-					std::cout << "the first invalid input char is: " << userInputString[i] << ", try again.\n";
-					goto tryAgain;
-				}
-			}
+			// if (!contains_number(userInputString)) {
+				// std::cout << "your input does not contain any number (no node index in your input), try again.\n";
+				// goto tryAgain;
+			// }
+			// for (int i = 0; i < userInputString.length(); ++i) {
+				// if (!isOneOfValidInputChar(userInputString[i])) {
+					// std::cout << "the first invalid input char is: " << userInputString[i] << ", try again.\n";
+					// goto tryAgain;
+				// }
+			// }
 			/*if (!isNumber(userInputString[userInputString.length() - 1])) {
 				std::cout << "the last inputed char (excluding spaces in the end) is not a part of node index, that is, the last inputed char is not a number, try again.\n";
 				goto tryAgain;
