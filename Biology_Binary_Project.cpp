@@ -324,56 +324,56 @@ public:
 			userInputString = tempString; /*now userInputString contains whatever user inputed boolean equation*/
 			userInputString = removeSpaces(userInputString); /*remove all spaces from the string*/
 			std::string userInputStringCopy = userInputString;
-			if (!contains_number(userInputString)) {
-				std::cout << "your input does not contain any number (no node index in your input), try again.\n";
-				goto tryAgain;
-			}
-			for (int i = 0; i < userInputString.length(); ++i) {
-				if (!isOneOfValidInputChar(userInputString[i])) {
-					std::cout << "the first invalid input char is: " << userInputString[i] << ", try again.\n";
-					goto tryAgain;
-				}
-			}
-			if (!isNumber(userInputString[userInputString.length() - 1])) {
-				std::cout << "the last inputed char (excluding spaces in the end) is not a part of node index, that is, the last inputed char is not a number, try again.\n";
-				goto tryAgain;
-			}
-			if (userInputString[0] == '&' || userInputString[0] == '|') {
-				std::cout << "the first char cannot be '&' or '|' (excluding spaces in the beginning), try again.\n";
-				goto tryAgain;
-			}
-			for (int i = 0; i < userInputString.length(); ++i) {
-				if (userInputString[i] == '~' && i + 1 < userInputString.length() && i + 1 >= 0) {
-					if (!isNumber(userInputString[i + 1])) {
-						std::cout << "'~' at position: " << i << " of the input string is not followed by a node index, try again.\n";
-						goto tryAgain;
-					}
-				}
-			}
-			for (int i = 0; i < userInputString.length(); ++i) {
-				if (userInputString[i] == '~' && i - 1 < userInputString.length() && i - 1 >= 0) {
-					if (isNumber(userInputString[i - 1])) {
-						std::cout << "'~' at position: " << i << " of the input string is not following an logical operation in front of it, try again.\n";
-						goto tryAgain;
-					}
-				}
-			}
-			for (int i = 0; i < userInputString.length(); ++i) {
-				if ((userInputString[i] == '&' || userInputString[i] == '|') && i - 1 < userInputString.length() && i - 1 >= 0) {
-					if (!isNumber(userInputString[i - 1])) {
-						std::cout << "'" << userInputString[i] << "' at position: " << i << " of the input string is not after a node index, try again.\n";
-						goto tryAgain;
-					}
-				}
-			}
-			for (int i = 0; i < userInputString.length(); ++i) {
-				if ((userInputString[i] == '&' || userInputString[i] == '|') && i + 1 < userInputString.length() && i + 1 >= 0) {
-					if (!isNumber(userInputString[i + 1]) && userInputString[i + 1] != '~') {
-						std::cout << "'" << userInputString[i] << "' at position: " << i << " of the input string is not followed by logical NOT operator '~' or a node index, try again.\n";
-						goto tryAgain;
-					}
-				}
-			}
+			// if (!contains_number(userInputString)) {
+				// std::cout << "your input does not contain any number (no node index in your input), try again.\n";
+				// goto tryAgain;
+			// }
+			// for (int i = 0; i < userInputString.length(); ++i) {
+				// if (!isOneOfValidInputChar(userInputString[i])) {
+					// std::cout << "the first invalid input char is: " << userInputString[i] << ", try again.\n";
+					// goto tryAgain;
+				// }
+			// }
+			// if (!isNumber(userInputString[userInputString.length() - 1])) {
+				// std::cout << "the last inputed char (excluding spaces in the end) is not a part of node index, that is, the last inputed char is not a number, try again.\n";
+				// goto tryAgain;
+			// }
+			// if (userInputString[0] == '&' || userInputString[0] == '|') {
+				// std::cout << "the first char cannot be '&' or '|' (excluding spaces in the beginning), try again.\n";
+				// goto tryAgain;
+			// }
+			// for (int i = 0; i < userInputString.length(); ++i) {
+				// if (userInputString[i] == '~' && i + 1 < userInputString.length() && i + 1 >= 0) {
+					// if (!isNumber(userInputString[i + 1])) {
+						// std::cout << "'~' at position: " << i << " of the input string is not followed by a node index, try again.\n";
+						// goto tryAgain;
+					// }
+				// }
+			// }
+			// for (int i = 0; i < userInputString.length(); ++i) {
+				// if (userInputString[i] == '~' && i - 1 < userInputString.length() && i - 1 >= 0) {
+					// if (isNumber(userInputString[i - 1])) {
+						// std::cout << "'~' at position: " << i << " of the input string is not following an logical operation in front of it, try again.\n";
+						// goto tryAgain;
+					// }
+				// }
+			// }
+			// for (int i = 0; i < userInputString.length(); ++i) {
+				// if ((userInputString[i] == '&' || userInputString[i] == '|') && i - 1 < userInputString.length() && i - 1 >= 0) {
+					// if (!isNumber(userInputString[i - 1])) {
+						// std::cout << "'" << userInputString[i] << "' at position: " << i << " of the input string is not after a node index, try again.\n";
+						// goto tryAgain;
+					// }
+				// }
+			// }
+			// for (int i = 0; i < userInputString.length(); ++i) {
+				// if ((userInputString[i] == '&' || userInputString[i] == '|') && i + 1 < userInputString.length() && i + 1 >= 0) {
+					// if (!isNumber(userInputString[i + 1]) && userInputString[i + 1] != '~') {
+						// std::cout << "'" << userInputString[i] << "' at position: " << i << " of the input string is not followed by logical NOT operator '~' or a node index, try again.\n";
+						// goto tryAgain;
+					// }
+				// }
+			// }
 			//===============================================================================================================================================
 			// the following block of code extracts all numbers in the inputted string
 			std::vector<int> nodeIndexesInUserInputtedString; /*vector stores each integer inputted in order*/
