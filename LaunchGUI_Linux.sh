@@ -23,7 +23,7 @@ sudo docker run --net=host -e DISPLAY=unix$DISPLAY --volume="/tmp/.X11-unix:/tmp
 # after the GUI is closed, retrieve the data from docker mount volume into a new directory
 mkdir -p simulation_data
 cd simulation_data
-cp -r ${data_add} ./
+sudo cp -r ${data_add} ./
 cd ../
 
 # remove the volume created above
